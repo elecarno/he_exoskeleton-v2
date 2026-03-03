@@ -34,6 +34,7 @@ def update(frame):
         line = ser.readline().decode('utf-8').strip()
         if line:
             angle = float(line)
+            print(angle)
 
             rad = np.deg2rad(angle)
 
